@@ -1,0 +1,10 @@
+svg path {
+  stroke: steelblue;
+  fill: none;
+  stroke-width: 7;
+}
+
+body,
+#root {
+  min-height: 100vh;
+}
