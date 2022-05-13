@@ -6,6 +6,9 @@ import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
 import image from "@rollup/plugin-image";
 import postcss from "rollup-plugin-postcss";
+import svgr from "@svgr/rollup";
+
+// let static_files = require("rollup-plugin-static-files");
 
 export default {
   input: "src/index.js",
@@ -16,6 +19,7 @@ export default {
   },
   plugins: [
     image(),
+    svgr(),
     postcss({
       extensions: [".css"],
     }),
